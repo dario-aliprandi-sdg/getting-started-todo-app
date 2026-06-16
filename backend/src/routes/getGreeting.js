@@ -1,13 +1,13 @@
-const GREETING = ['Hello Caterina', 'Hello Dario', 'Hello Amaia' ];
+// Define it at the top of the file or right inside the function
+const GREETINGS = [
+    "Hello World!",
+    "Welcome back!",
+    "Great to see you again!"
+];
 
-module.exports = async (req, res) => {
+module.exports = (req, res) => {
+    const randomIndex = Math.floor(Math.random() * GREETINGS.length);
     res.send({
-        greeting: GREETING,
+        greeting: GREETINGS[randomIndex]
     });
-};
-
-module.exports = async (req, res) => {
-  res.send({
-    greeting: GREETINGS[Math.floor(Math.random() * GREETINGS.length)],
-  });
 };
