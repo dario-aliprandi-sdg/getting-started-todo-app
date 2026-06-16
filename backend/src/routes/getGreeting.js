@@ -1,8 +1,7 @@
-// Define it at the top of the file or right inside the function
 const GREETINGS = [
-    "Hello World!",
-    "Welcome back!",
-    "Great to see you again!"
+    "Hello Caterina!",
+    "Hello Dario!",
+    "Hello Amaia!"
 ];
 
 module.exports = (req, res) => {
